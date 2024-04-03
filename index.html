@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Warner Bros. Website</title>
   <link href="style.css" rel="stylesheet">
+  <!-- Add Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -15,6 +17,7 @@
     </header>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="movies.html">Movies</a></li>
         <li><a href="tv_shows.html">TV Shows</a></li>
         <li><a href="games_apps.html">Games & Apps</a></li>
@@ -51,13 +54,21 @@
   </div>
 
   <!-- Toggle Dark Mode Button -->
-  <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  <button id="dark-mode-toggle">
+    <i class="fas fa-moon"></i> <!-- Moon icon -->
+    <i class="fas fa-sun" style="display: none;"></i> <!-- Sun icon (hidden by default) -->
+  </button>
 
   <script>
     const darkModeToggle = document.getElementById('dark-mode-toggle');
 
     darkModeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
+      // Toggle icon visibility
+      const moonIcon = darkModeToggle.querySelector('.fa-moon');
+      const sunIcon = darkModeToggle.querySelector('.fa-sun');
+      moonIcon.style.display = moonIcon.style.display === 'none' ? 'inline' : 'none';
+      sunIcon.style.display = sunIcon.style.display === 'none' ? 'inline' : 'none';
     });
   </script>
 
