@@ -7,6 +7,39 @@
   <link href="style.css" rel="stylesheet">
   <!-- Add Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Keyframes for fire animation */
+    @keyframes fire {
+      0% { transform: translateY(0) rotate(0); }
+      100% { transform: translateY(-10px) rotate(5deg); }
+    }
+
+    /* Keyframes for smoke animation */
+    @keyframes smoke {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Fire animation */
+    .fire {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: fire 0.5s infinite alternate;
+    }
+
+    /* Smoke animation */
+    .smoke {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: smoke 2s infinite;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,6 +60,8 @@
     </nav>
     <section>
       <!-- Content for the index page -->
+      <div class="fire"></div> <!-- Fire effect -->
+      <div class="smoke"></div> <!-- Smoke effect -->
     </section>
     <footer>
       <p>&copy; 2024 Warner Bros. All rights reserved.</p>
@@ -61,6 +96,8 @@
 
   <script>
     const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const fireEffect = document.querySelector('.fire');
+    const smokeEffect = document.querySelector('.smoke');
 
     darkModeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
@@ -69,6 +106,15 @@
       const sunIcon = darkModeToggle.querySelector('.fa-sun');
       moonIcon.style.display = moonIcon.style.display === 'none' ? 'inline' : 'none';
       sunIcon.style.display = sunIcon.style.display === 'none' ? 'inline' : 'none';
+
+      // Toggle fire and smoke effects
+      if (document.body.classList.contains('dark-mode')) {
+        fireEffect.style.display = 'none';
+        smokeEffect.style.display = 'block';
+      } else {
+        fireEffect.style.display = 'block';
+        smokeEffect.style.display = 'none';
+      }
     });
   </script>
 
