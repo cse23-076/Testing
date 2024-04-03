@@ -1,175 +1,191 @@
+/* Define CSS variables for colors */
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #333333;
+  --background-color-dark: #222222;
+  --text-color-dark: #dddddd;
+}
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color-light); /* Default background color */
+  color: var(--text-color-light); /* Default text color */
 }
 
 .page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Styles for the Feedback page */
 form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Styles for the Movies page */
 .movie-page {
-    margin-bottom: 40px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    transition: box-shadow 0.3s;
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
 }
 
 .movie-page:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .movie-page h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .movie-page img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 /* Styles for individual TV show pages */
 .tv-show-page {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .tv-show-page h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .tv-show-page p {
-    color: #666;
-    line-height: 1.6;
+  color: #666;
+  line-height: 1.6;
 }
 
 .tv-show-page img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 /* Styles for individual game/app pages */
 .game-app-page {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .game-app-page h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .game-app-page p {
-    color: #666;
-    line-height: 1.6;
+  color: #666;
+  line-height: 1.6;
 }
 
 .game-app-page img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .game-app-page a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .game-app-page a:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .tv-show-page,
-    .game-app-page {
-        padding: 15px;
-    }
+  .tv-show-page,
+  .game-app-page {
+    padding: 15px;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
 }
