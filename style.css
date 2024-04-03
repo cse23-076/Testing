@@ -1,7 +1,9 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4; /* Light gray background */
 }
 
 .page {
@@ -45,6 +47,7 @@ section {
 
 /* Movie page styles */
 .movie-page {
+  background-color: #fff; /* White background for movie pages */
   border: 1px solid #ccc;
   padding: 20px;
   margin-bottom: 20px;
