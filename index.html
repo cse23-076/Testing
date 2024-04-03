@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Warner Bros. Website</title>
-  <link href="style.css" rel="stylesheet"> <!-- corrected file name -->
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -50,9 +50,16 @@
     <!-- Content for the collections page -->
   </div>
 
-  <!-- Dark Mode Toggle Button -->
+  <!-- Toggle Dark Mode Button -->
   <button id="dark-mode-toggle">Toggle Dark Mode</button>
 
-  <script src="script.js"></script>
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
 </body>
 </html>
