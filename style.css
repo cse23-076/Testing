@@ -123,9 +123,53 @@ input[type="submit"]:hover {
     border-radius: 5px;
 }
 
+/* Styles for individual game/app pages */
+.game-app-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-app-page h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game-app-page p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.game-app-page img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.game-app-page a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.game-app-page a:hover {
+    background-color: #0056b3;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
-    .tv-show-page {
+    .tv-show-page,
+    .game-app-page {
         padding: 15px;
     }
 }
