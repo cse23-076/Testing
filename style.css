@@ -94,3 +94,38 @@ input[type="submit"]:hover {
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+/* Styles for individual TV show pages */
+.tv-show-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tv-show-page h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tv-show-page p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.tv-show-page img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .tv-show-page {
+        padding: 15px;
+    }
+}
